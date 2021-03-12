@@ -1,10 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
+### Days between Dates
 
-# ### Days between Dates
-# 
-
-# In[72]:
 
 
 def isLeapyear(year):
@@ -12,7 +7,8 @@ def isLeapyear(year):
         return True
     return False
 def daysinmonth(year,month):
-    if month%2 == 1:
+    if month == 1 or month == 3 or month == 5 or month == 7/
+        month == 8 or month == 10 or month == 12:
         return 31
     elif month == 2 and isLeapyear(year):
         return 29
@@ -48,17 +44,17 @@ def daysbetweendates(year1,month1,day1,year2,month2,day2):
         return days
 
 
-# In[76]:
+
 
 
 ## test cases
 #daysBetweenDates(2017, 12, 30, 2017, 12, 30)
 #daysBetweenDates(2017, 12, 30, 2017, 12, 31)
-daysBetweenDates(2017, 12, 30, 2018, 12, 30)
+#daysBetweenDates(2017, 12, 30, 2018, 12, 30)
 #daysBetweenDates(2013, 12, 30, 2017, 12, 30)
 
 
-# In[ ]:
+
 
 
 
