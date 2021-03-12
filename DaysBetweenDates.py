@@ -40,7 +40,7 @@ def dateisbefore(year1,month1,day1,year2,month2,day2):
     return False
 
 def daysbetweendates(year1,month1,day1,year2,month2,day2):
-        assert dateisbefore(year1,month1,day1,year2,month2,day2)
+        assert not dateisbefore(year2,month2,day2,year1,month1,day1)
         days==0
         while dateisbefore(year1,month1,day1,year2,month2,day2):
             year1,month1,day1 = nextday(year1,month1,day1)
